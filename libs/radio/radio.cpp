@@ -16,6 +16,12 @@
 #define CODAL_RADIO codal::NRF52Radio
 #define CODAL_EVENT codal::Event
 
+#elif defined(PICO_BOARD)
+
+#include "RF24Radio.h"
+#define CODAL_RADIO codal::RF24Radio
+#define CODAL_EVENT codal::Event
+
 #endif
 
 using namespace pxt;
